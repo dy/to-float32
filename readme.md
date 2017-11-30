@@ -5,16 +5,24 @@ Dirty little helper to convert array to float32 array or return round remainder 
 [![npm install to-float32](https://nodei.co/npm/to-float32.png?mini=true)](https://npmjs.org/package/to-float32/)
 
 ```js
-let {float, fract} = require('to-float32')
+let {float32, fract32} = require('to-float32')
 
-let positions = Array.from({length: 1024}, Math.random)
+let data = Array.from({length: 1024}, Math.random)
 
 // create float32 data
-let buffer = float(positions)
+let buffer = float(data)
 
-// create fract32 data
-let fractBuffer = fract(positions)
+// get float32 remainders
+let fractBuffer = fract32(data)
+
+// convert number to float32
+let f32 = float32(0.1) // 0.10000000149011612
+
+// get float32 number remainder
+let rem32 = fract32(0.1) //
 ```
+
+Fract data is _Float32Array_ with values calculated as `origValue - float32value`
 
 ## License
 
