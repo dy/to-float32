@@ -1,4 +1,4 @@
-# to-float32 [![unstable](https://img.shields.io/badge/stability-unstable-green.svg)](http://github.com/badges/stability-badges)
+# to-float32 [![unstable](https://img.shields.io/badge/stability-unstable-green.svg)](http://github.com/badges/stability-badges) [![Build Status](https://travis-ci.org/dy/to-uint8.svg?branch=master)](https://travis-ci.org/dy/to-uint8)
 
 Dirty little helper to convert array to float32 array or return round remainder of converting to float32. Useful for sending data to webgl buffers.
 
